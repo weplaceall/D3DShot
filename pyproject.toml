@@ -1,11 +1,11 @@
 [tool.poetry]
-name = "D3DShot"
-version = "0.1.5"
-description = "Extremely Fast and Robust Screen Capture on Windows with the Desktop Duplication API"
+name = "D3DShot-forked"
+version = "0.1.6"
+description = "A fork of the original D3DShot package: Extremely Fast and Robust Screen Capture on Windows with the Desktop Duplication API"
 readme = "README.md"
 authors = ["Nicholas Brochu <nicholas@serpent.ai>"]
 license = "MIT"
-repository = "https://github.com/SerpentAI/D3DShot"
+repository = "https://github.com/fauskanger/D3DShot"
 keywords = ["Screen Capture", "Screenshot", "Computer Vision", "Windows"]
 classifiers = [
     "Development Status :: 5 - Production/Stable",
@@ -17,6 +17,8 @@ classifiers = [
     "Operating System :: Microsoft :: Windows :: Windows 10",
     "Programming Language :: Python",
     "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
     "Topic :: Multimedia :: Graphics",
     "Topic :: Multimedia :: Graphics :: Capture",
     "Topic :: Multimedia :: Graphics :: Capture :: Screen Capture"
@@ -29,12 +31,12 @@ include = []
 [tool.poetry.dependencies]
 python = ">=3.6"
 
-comtypes = "~1.1.7"
+comtypes = ">=1.1.7"
 pillow = ">=7.1.2"
 
 [tool.poetry.dev-dependencies]
-ipython = "~7.14"
-notebook = "~6.0"
+ipython = ">=7.14"
+notebook = ">=6.0"
 
 [tool.black]
 line-length = 99
