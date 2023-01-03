@@ -4,7 +4,7 @@ from d3dshot.d3dshot import D3DShot
 from d3dshot.capture_output import CaptureOutputs
 
 
-pil_is_available = importlib.util.find_spec("PIL") is not None
+pil_is_available = importlib.util.find_spec("pil") is not None
 numpy_is_available = importlib.util.find_spec("numpy") is not None
 
 pytorch_is_available = (
